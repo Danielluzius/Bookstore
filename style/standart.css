@@ -12,13 +12,14 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: #ffffff;
 }
 
 /* === Bilder: responsive === */
 img {
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
   display: block;
 }
 
@@ -46,18 +47,18 @@ a {
 
 /* === Header === */
 header {
-  background-color: #fff;
+  background-color: #111456;
 }
 
 /* === Main === */
 main {
   flex: 1;
-  background-color: #fff;
+  background-color: #0a0a3c;
 }
 
 /* === Footer === */
 footer {
-  background-color: #fff;
+  background-color: #111456;
 }
 
 /* === Responsiveness === */

@@ -9,21 +9,20 @@
     <link rel="stylesheet" href="./style/standart.css" />
 </head>
 
-<body>
+<body onload="init()">
     <div class="page-wrapper">
 
         <header>
             <div class="wrapper">
                 <h1>Bookstore</h1>
+                <p>- Deine Anlaufstelle für Bücher aller Art</p>
             </div>
         </header>
 
         <main>
             <div class="wrapper">
-                <section>
-                    <h2>Willkommen!</h2>
-                    <p>Dies ist dein HTML-Standard-Template.</p>
-                    <a href="#">Hier ein Link</a>
+                <section class="book-list">
+                    <div id="book_cards"></div>
                 </section>
             </div>
         </main>

@@ -1,0 +1,56 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  padding: 0;
+  margin: 0;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#book_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  width: 400px;
+  background-color: black;
+  border-radius: 16px;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-list {
+  max-height: 150px;
+  overflow-y: auto;
+}
