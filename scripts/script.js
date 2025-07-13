@@ -3,29 +3,29 @@ function init() {
   renderComments();
 }
 
-const getBooksId = document.getElementById('book_cards');
+const getBookCardsById = document.getElementById('book_cards');
 
 function renderBooks() {
-  let booksIntoHTML = '';
+  let bookHtml = '';
 
   for (let i = 0; i < allBooks.length; i++) {
-    const book = allBooks[i];
-    booksIntoHTML += bookTemplate(book, i);
-  }
+    const bookRef = allBooks[i];
 
-  getBooksId.innerHTML = booksIntoHTML;
+    bookHtml += bookTemplate(bookRef, i);
+  }
+  getBookCardsById.innerHTML = bookHtml;
 }
 
 function renderComments() {
   for (let i = 0; i < allBooks.length; i++) {
-    const comments = allBooks[i].comments;
-    const targetId = document.getElementById(`comment_section_${i}`);
+    const commentRef = allBooks[i].comments;
+    const targetID = document.getElementById(`comment_section_${i}`);
 
-    let commentsHTML = '';
-    for (let j = 0; j < comments.length; j++) {
-      commentsHTML += commentsTemplate(comments, j);
+    let commentHtml = '';
+
+    for (let j = 0; j < commentRef.length; j++) {
+      commentHtml += commentsTemplate(commentRef, j);
     }
-
-    targetId.innerHTML = commentsHTML;
+    targetID.innerHTML = commentHtml;
   }
 }
