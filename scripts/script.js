@@ -31,8 +31,8 @@ function renderComments() {
 }
 
 function addComment(i) {
-  const inputField = document.getElementById(`input_${i}`);
-  const commentText = inputField.value.trim();
+  const inputComment = document.getElementById(`input_${i}`);
+  const commentText = inputComment.value.trim();
 
   if (commentText) {
     allBooks[i].comments.push({
@@ -40,7 +40,7 @@ function addComment(i) {
       comment: commentText,
     });
 
-    inputField.value = '';
+    inputComment.value = '';
     renderComments();
   }
 }

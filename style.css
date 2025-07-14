@@ -1,8 +1,15 @@
+h1 {
+  font-family: 'Rubik Dirt';
+  font-weight: 400;
+}
+
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 16px 0;
+  padding: 8px 16px;
+  font-family: 'Rubik Dirt';
+  font-weight: 400;
 }
 
 .line {
@@ -70,11 +77,6 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.comments-section {
-  display: flex;
-  justify-content: center;
 }
 
 .info-wrapper {
