@@ -29,3 +29,35 @@ function renderComments() {
     targetID.innerHTML = commentHtml;
   }
 }
+
+function addComment(i) {
+  const inputField = document.getElementById(`input_${i}`);
+  const commentText = inputField.value.trim();
+
+  if (commentText) {
+    allBooks[i].comments.push({
+      name: 'Neuer Nutzer',
+      comment: commentText,
+    });
+
+    inputField.value = '';
+    renderComments();
+  }
+}
+
+function toggleLike(i) {
+  const likeRef = allBooks[i];
+  const heart = document.getElementById(`heart_${i}`);
+  const count = document.getElementById(`likes_count_${i}`);
+
+  likeRef.liked = !likeRef.liked;
+
+  if (likeRef.liked) {
+    likeRef.likes++;
+  } else {
+    likeRef.likes--;
+  }
+
+  heart.innerText = likeRef.liked ? '❤️' : '🩶';
+  count.innerText = likeRef.likes;
+}
